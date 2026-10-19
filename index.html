@@ -1,106 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stock Market Basics – Join Free</title>
-  <meta name="description" content="100% free stock market education. Learn chart reading, technical analysis, and risk management. No buy/sell tips. For learning purpose only.">
-  <link rel="canonical" href="https://example.com/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikka777 App - Official Download</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2213265045924555');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2213265045924555&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, #FFF3F5 0%, #FFEBF0 50%, #FFE4EA 100%);
+            min-height: 100vh;
+        }
 
-  <!-- Performance -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+        /* Custom red glow effect for the main CTA button */
+        .glow-button {
+            background: linear-gradient(180deg, #BF081B 0%, #87000F 100%);
+            box-shadow: 0 10px 25px -3px rgba(191, 8, 27, 0.55), 0 4px 10px -2px rgba(135, 0, 15, 0.4);
+            transition: all 0.3s ease;
+        }
 
-  <!-- Favicons (optional) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+        .glow-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px -2px rgba(191, 8, 27, 0.65), 0 6px 12px -2px rgba(135, 0, 15, 0.5);
+            background: linear-gradient(180deg, #D6091F 0%, #9B0012 100%);
+        }
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Stock Market Basics – Join Free">
-  <meta property="og:description" content="Learn charts & risk management. No buy/sell tips. 100% educational.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?q=80&w=1600&auto=format&fit=crop">
+        .glow-button:active {
+            transform: translateY(1px);
+            box-shadow: 0 5px 15px -2px rgba(191, 8, 27, 0.5);
+        }
 
-  <!-- Minimal CSS (inline for speed) -->
-  <style>
-    :root{
-      --bg1:#0c0c1d;
-      --bg2:#1a1a2b;
-      --brand: #ff6699;
-      --brand-2:#00f0ff;
-      --text:#ffffff;
-      --muted:#b5b5c3;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        linear-gradient(135deg, rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url('https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?q=80&w=1600&auto=format&fit=crop') no-repeat center/cover fixed;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-      min-height:100vh;
-    }
-    .container{
-      max-width:520px; margin:0 auto; padding:24px 18px; text-align:center; min-height:100vh; display:flex; flex-direction:column; justify-content:center;
-      backdrop-filter: saturate(130%);
-    }
-    .badge{display:inline-block; font-size:.78rem; padding:6px 10px; border:1px solid #2a2a3a; border-radius:999px; color:#d6eaff; background:rgba(0,240,255,.08); margin-bottom:14px}
-    h1{font-size:1.9rem; line-height:1.2; margin:6px 0 10px; background:linear-gradient(90deg,var(--brand-2),var(--brand)); -webkit-background-clip:text; background-clip:text; color:transparent;}
-    .sub{font-size:1rem; color:var(--muted); margin:0 auto 16px; max-width:36ch}
-    .pill{
-      display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:rgba(0,255,153,.07); border:1px dashed rgba(0,255,153,.35); color:#d8ffe9; font-size:.9rem; margin:6px 0 18px;
-    }
-    ul.bullets{list-style:none; padding:0; margin:0 0 18px}
-    ul.bullets li{margin:8px 0; color:#e9eef9}
-    .cta{
-      display:inline-block; text-decoration:none; background:var(--brand); color:#041b14; padding:14px 18px; font-weight:700; border-radius:12px; box-shadow:0 0 0 0 rgba(0,255,153,.6); transform:translateZ(0);
-      transition:transform .15s ease;
-      animation:pulse 1.6s infinite;
-    }
-    .cta:active{transform:scale(.98)}
-    @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(0,255,153,.55)}
-      70%{box-shadow:0 0 0 20px rgba(0,255,153,0)}
-      100%{box-shadow:0 0 0 0 rgba(0,255,153,0)}
-    }
-    .fineprint{font-size:.86rem; color:var(--muted); margin:18px auto 0; max-width:44ch}
-    .disclaimer{font-size:.78rem; color:#9aa4b2; margin:18px auto 0; max-width:50ch}
-    .safe{display:flex; align-items:center; justify-content:center; gap:8px; margin-top:14px; color:#a1ffd6; font-size:.9rem}
-    .shield{width:18px; height:18px; display:inline-block; border-radius:4px; background:linear-gradient(135deg,#0df,#0f9)}
-    footer{opacity:.8; margin-top:22px; font-size:.78rem; color:#9aa4b2}
-  </style>
+        /* Subtle feature card styling with pink border glow */
+        .feature-card {
+            background-color: #FFFFFF;
+            border: 1.5px solid #FFCCD5;
+            box-shadow: 0 8px 20px -4px rgba(255, 182, 193, 0.35);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px -4px rgba(255, 150, 170, 0.45);
+        }
+
+        /* Modal Animation Effects */
+        .modal-backdrop {
+            background-color: rgba(45, 10, 15, 0.6);
+            backdrop-filter: blur(4px);
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-card {
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+        }
+
+        .modal-hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .modal-hidden .modal-card {
+            transform: scale(0.95) translateY(10px);
+        }
+
+        .modal-visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-visible .modal-card {
+            transform: scale(1) translateY(0);
+        }
+
+        /* Custom Scrollbar for modal content */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #FFEBF0;
+            border-radius: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #FFB3C1;
+            border-radius: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #BF081B;
+        }
+    </style>
 </head>
-<body>
-  <main class="container">
-    <span class="badge">100% Educational • Policy Safe</span>
-    <h1>Stock Market Basics – Join Free</h1>
-    <p class="sub">Learn index behaviour & risk management</p>
+<body class="flex flex-col justify-between min-h-screen px-4 pt-10 pb-6 antialiased selection:bg-red-200">
 
-    <div class="pill">🚫 No Buy/Sell Tips • ✅ For Learning Purpose Only</div>
+    <!-- Main Content Wrapper -->
+    <main class="w-full max-w-md mx-auto text-center flex flex-col items-center justify-center my-auto">
 
-    <ul class="bullets" aria-label="What you'll learn">
-      <li>• Chart basics & risk rules (no return promises)</li>
-      <li>• How to read trends without speculation</li>
-      <li>• Market discipline & common mistakes</li>
-    </ul>
+        <!-- Main Title -->
+        <h1 class="text-3xl md:text-4xl font-black text-[#5C0612] tracking-tight mb-2">
+            Sikka777
+        </h1>
 
-    <!-- CTA goes to a page-specific bridge -->
-    <a class="cta" href="bridge-lp79.html" rel="nofollow">Start Learning</a>
+        <!-- Subtitle Paragraphs -->
+        <div class="space-y-1 mb-7 text-[#4A2026] px-2">
+            <p class="text-sm md:text-base font-semibold">
+                Download the official <span class="font-extrabold text-[#5C0612]">Sikka777</span>
+            </p>
+            <p class="text-xs md:text-sm font-medium leading-relaxed text-[#6E353E]">
+                India's Most Fastest Growing App and smooth experience.
+            </p>
+        </div>
 
-    <div class="safe"><span class="shield" aria-hidden="true"></span> Ad Policy Friendly Content</div>
+        <!-- Download CTA Button with APK Link -->
+        <a href="sikka777.apk" download="sikka777.apk" class="w-full max-w-xs mb-8 block">
+            <button type="button" class="w-full py-3.5 px-6 rounded-full text-white font-extrabold text-base tracking-wider glow-button flex items-center justify-center gap-2.5">
+                <!-- Down Arrow Icon -->
+                <svg class="w-5 h-5 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path>
+                </svg>
+                <span>DOWNLOAD NOW</span>
+            </button>
+        </a>
 
-    <p class="fineprint">We focus on concepts & frameworks suitable for beginners.</p>
-    <p class="disclaimer"><em>This website is for educational purposes only. We do not provide investment, trading, or financial advice.</em></p>
 
-    <footer>© <span id="y"></span> Market Basics Learning Hub</footer>
-  </main>
+            </div>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full max-w-md mx-auto pt-8 pb-2 text-center">
+        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs font-semibold text-[#822E3B]">
+            <button onclick="openModal('terms')" class="hover:text-[#BF081B] transition-colors underline decoration-dotted underline-offset-4 focus:outline-none">
+                Terms & Conditions
+            </button>
+            <span class="text-[#DBA0AA]">•</span>
+            <button onclick="openModal('about')" class="hover:text-[#BF081B] transition-colors underline decoration-dotted underline-offset-4 focus:outline-none">
+                About Us
+            </button>
+            <span class="text-[#DBA0AA]">•</span>
+            <button onclick="openModal('disclaimer')" class="hover:text-[#BF081B] transition-colors underline decoration-dotted underline-offset-4 focus:outline-none">
+                Disclaimer
+            </button>
+            <span class="text-[#DBA0AA]">•</span>
+            <button onclick="openModal('contact')" class="hover:text-[#BF081B] transition-colors underline decoration-dotted underline-offset-4 focus:outline-none">
+                Contact Us
+            </button>
+        </div>
+        <p class="text-[11px] font-medium text-[#9E515E] mt-3">
+            © <span id="year"></span> Sikka777. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- Modal Dialog Overlay Container -->
+    <div id="modalContainer" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop modal-hidden" aria-hidden="true">
+        <!-- Modal Card -->
+        <div class="modal-card bg-white rounded-3xl shadow-2xl border border-[#FFCCD5] w-full max-w-md max-h-[85vh] flex flex-col overflow-hidden relative" onclick="event.stopPropagation()">
+            
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-[#FFF0F3] to-[#FFEBF0] border-b border-[#FFCCD5]">
+                <h2 id="modalTitle" class="text-lg font-bold text-[#5C0612] flex items-center gap-2">
+                    <!-- Title dynamically inserted -->
+                </h2>
+                <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-white/80 hover:bg-[#BF081B] hover:text-white text-[#5C0612] border border-[#FFB3C1] flex items-center justify-center transition-all focus:outline-none shadow-sm" aria-label="Close modal">
+                    ✕
+                </button>
+            </div>
+
+            <!-- Modal Content Body -->
+            <div id="modalBody" class="p-6 overflow-y-auto custom-scrollbar text-sm text-[#4A2026] leading-relaxed space-y-4">
+                <!-- Content dynamically inserted -->
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="px-6 py-3 bg-[#FFF3F5] border-t border-[#FFCCD5] flex justify-end">
+                <button onclick="closeModal()" class="px-5 py-2 rounded-full bg-[#87000F] hover:bg-[#BF081B] text-white font-semibold text-xs transition-colors shadow">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Content repository for modals
+        const modalData = {
+            'terms': {
+                title: '📜 Terms & Conditions',
+                content: `
+                    <p class="font-semibold text-[#5C0612]">Welcome to Sikka777 App!</p>
+                    <p>By downloading or using the Sikka777 application, these terms will automatically apply to you. You should make sure that you read them carefully before using the app.</p>
+                    <p><strong>1. Usage License:</strong> Permission is granted to download one copy of the Sikka777 App for personal, non-commercial viewing or usage on your mobile device only.</p>
+                    <p><strong>2. User Responsibility:</strong> Users must ensure they are using the app in compliance with all local laws and regulations. You are solely responsible for keeping your device secure.</p>
+                    <p><strong>3. Updates & Changes:</strong> We reserve the right to modify or update the app features, functionality, or terms at any time without prior notice.</p>
+                `
+            },
+            'about': {
+                title: 'ℹ️ About Us',
+                content: `
+                    <p class="font-semibold text-[#5C0612]">About Sikka777 App</p>
+                    <p>Sikka777 App is India's fastest-growing platform dedicated to delivering superfast updates and a seamless mobile application experience.</p>
+                    <p><strong>Our Mission:</strong> To provide a lightweight, safe, and lightning-fast interface for users across India with zero latency and hassle-free updates.</p>
+                    <p><strong>Why Choose Us?</strong></p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Instant real-time result updates without delays.</li>
+                        <li>High-security data protection standards.</li>
+                        <li>Optimized for low-end to high-end Android phones.</li>
+                    </ul>
+                `
+            },
+            'disclaimer': {
+                title: '⚠️ Disclaimer',
+                content: `
+                    <p class="font-semibold text-[#5C0612]">Important Notice</p>
+                    <p>The information and result updates provided on the Sikka777 App are strictly for informational and educational purposes.</p>
+                    <p>Sikka777 App does not promote or encourage illegal activities. Users are advised to exercise discretion and ensure full compliance with their local legal guidelines.</p>
+                    <p>We do not guarantee 100% uninterrupted service, though we strive to deliver maximum uptime and accurate information at all times.</p>
+                `
+            },
+            'contact': {
+                title: '📞 Contact Us',
+                content: `
+                    <p class="font-semibold text-[#5C0612]">Get in Touch</p>
+                    <p>Have questions, feedback, or need help with Sikka777 App? Our support team is here to assist you!</p>
+                    <div class="bg-[#FFEBF0] p-3.5 rounded-xl border border-[#FFCCD5] space-y-2 text-xs my-2">
+                        <p class="flex items-center gap-2"><strong>📧 Email:</strong> support@sikka777app.com</p>
+                        <p class="flex items-center gap-2"><strong>⏱️ Hours:</strong> Monday - Saturday (9 AM - 8 PM)</p>
+                        <p class="flex items-center gap-2"><strong>📍 Location:</strong> India</p>
+                    </div>
+                    <p class="text-xs text-[#822E3B]">We usually respond to all inquiries within 24 hours.</p>
+                `
+            }
+        };
+
+        const modalContainer = document.getElementById('modalContainer');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+
+        // Function to open modal
+        function openModal(key) {
+            const data = modalData[key];
+            if (!data) return;
+
+            modalTitle.innerHTML = data.title;
+            modalBody.innerHTML = data.content;
+
+            modalContainer.classList.remove('modal-hidden');
+            modalContainer.classList.add('modal-visible');
+            modalContainer.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Function to close modal
+        function closeModal() {
+            modalContainer.classList.remove('modal-visible');
+            modalContainer.classList.add('modal-hidden');
+            modalContainer.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        // Close on clicking outside the modal box
+        modalContainer.addEventListener('click', function(e) {
+            if (e.target === modalContainer) {
+                closeModal();
+            }
+        });
+
+        // Close on Escape key press
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modalContainer.classList.contains('modal-visible')) {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
